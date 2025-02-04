@@ -5,6 +5,7 @@ import partyPopper from './party-popper.png';
 import subBrandLogo from './sub-brand-logo.svg';
 import glass from './glass.png';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const [fullName, setFullName] = useState('');
@@ -22,7 +23,15 @@ function App() {
       'workEmail': workEmail,
       'phoneNumber': phoneNumber
     }
-    console.log('form', formData);
+    if(fullName && companyName && jobTitle && workEmail){
+      toast("saved successfully.");
+      console.log('form', formData);
+      setFullName('');
+      setCompanyName('');
+      setJobTitle('');
+      setWorkEmail('');
+      setPhoneNumber('');
+    }
   }
   return (
     <div className="App">
@@ -92,6 +101,7 @@ function App() {
       {/* <div class="footer">
         <p></p>
       </div> */}
+      <ToastContainer />
     </div>
   );
 }
