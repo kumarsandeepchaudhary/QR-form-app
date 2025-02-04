@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.full-image {
+  width: 60vw;
+  margin-top: 40px;
+}
+
+@media (max-width: 575.98px) { 
+  .sub-header {
+    display: none;
+  }
+  .image-background {
+    background: #ECEBEB;
+  }
+  .hide-lg-logos {
+    display: none;
+  }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .image-background {
+    padding-bottom: 150px;
+    background: #ECEBEB;
+  }
+  .from-section {
+    padding: 40px;
+    margin-top: -210px;
+  }
+  .hide-lg-logos {
+    display: none;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-background {
+    padding-bottom: 150px;
+    background: #ECEBEB;
+  } 
+  .from-section {
+    padding: 40px;
+    margin-top: -210px;
+  }
+  .hide-lg-logos {
+    display: none;
+  }
+ }
+
+ /* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .from-section {
+    padding: 40px;
+  }
+  .hide-sm-logos {
+    display: none;
+  }
+ }
+
+.form-card {
+  border-radius: 20px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+.send-button {
+  background: #FB8C00;
+  width: 315px;
+  height: 52px;
+  border-radius: 26px;
+  font-size: 22px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: -82px;
+  width: 100%;
+  background-color: #FB8C00;
+  color: white;
+  text-align: center;
+  border-radius: 50% 50% 0 0;
+  border: 10px solid #e6af69;
+  height: 155px;
+}
