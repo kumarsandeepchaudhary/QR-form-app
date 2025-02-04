@@ -111,6 +111,10 @@
   font-size: 22px;
 }
 
+.send-button:hover{
+  background: #e19739;
+}
+
 .footer {
   position: fixed;
   left: 0;
