@@ -27,15 +27,12 @@ function App() {
     if (fullName && companyName && jobTitle && workEmail) {
       axios.post('http://localhost:3030', formData)
         .then(response => {
-          console.log(response.data);
+          document.getElementsByClassName('confirmation-Modal')[0].style.display = 'block';
+          document.getElementsByClassName('landingPage')[0].style.display = 'none';
         })
         .catch(error => {
           console.error(error);
         });
-      // toast("saved successfully.");
-      document.getElementsByClassName('confirmation-Modal')[0].style.display = 'block';
-      document.getElementsByClassName('landingPage')[0].style.display = 'none';
-      console.log('form', formData);
     }
   }
   function hideModal() {
