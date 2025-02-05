@@ -49,6 +49,7 @@
   }
   .image-background {
     background: #ECEBEB;
+    border-radius: 0px 0px 80px 80px
   }
   .hide-lg-logos {
     display: none;
@@ -60,6 +61,7 @@
   .image-background {
     padding-bottom: 150px;
     background: #ECEBEB;
+    border-radius: 0px 0px 80px 80px
   }
   .from-section {
     padding: 40px;
@@ -75,6 +77,7 @@
   .image-background {
     padding-bottom: 150px;
     background: #ECEBEB;
+    border-radius: 0px 0px 80px 80px
   } 
   .from-section {
     padding: 40px;
@@ -126,4 +129,29 @@
   border-radius: 50% 50% 0 0;
   border: 10px solid #e6af69;
   height: 155px;
+}
+
+.confirmation-Modal {
+  min-height: 100vh;
+  /* min-width: 100vw; */
+  /* background: gray; */
+  display: none;
+  z-index: 9999;
+  /* position: absolute; */
+  top: 0;
+  opacity: 0.9;
+}
+
+.confirmation-Content {
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* width: 400px; */
+  /* height: 650px; */
+  background: white;
+  border-radius: 5px;
+  /* padding: 12px; */
 }
