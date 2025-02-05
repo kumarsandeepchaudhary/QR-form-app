@@ -7,6 +7,7 @@ import glass from './glass.png';
 import { useState } from 'react';
 import confirmLogo from './confirm.png';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const [fullName, setFullName] = useState('');
@@ -31,6 +32,7 @@ function App() {
           document.getElementsByClassName('landingPage')[0].style.display = 'none';
         })
         .catch(error => {
+          toast("something went wrong.");
           console.error(error);
         });
     }
@@ -115,6 +117,7 @@ function App() {
       {/* <div class="footer">
         <p></p>
       </div> */}
+      <ToastContainer />
       <div className="confirmation-Modal">
         <div className='confirmation-Content'>
           <div>
